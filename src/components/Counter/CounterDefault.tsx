@@ -4,11 +4,11 @@ import solidLogo from "#/assets/solid.svg";
 import viteLogo from "/vite.svg";
 import "./style.css";
 
-export const Counter: Component = () => {
+export const CounterDefault: Component = () => {
   const [getCount, setCount] = createSignal(0);
 
   return (
-    <div id="Counter">
+    <div id="CounterDefault">
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} class="logo" alt="Vite logo" />

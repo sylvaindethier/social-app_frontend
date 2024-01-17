@@ -9,6 +9,7 @@ import route404 from "#/router/404/definition";
 import routeIndex from "#/router/index/definition";
 
 // *** Counter *** //
+import routeCounterDefault from "#/router/counter-default/definition";
 import routeCounter from "#/router/counter/definition";
 import routeUseCounter from "#/router/use-counter/definition";
 
@@ -24,6 +25,7 @@ const children: RouteDefinition[] = [
   routeIndex,
 
   // Counter
+  routeCounterDefault,
   routeCounter,
   routeUseCounter,
 
