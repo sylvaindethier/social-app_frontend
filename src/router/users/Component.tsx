@@ -1,8 +1,8 @@
-import type { RouteSectionComponent } from "../Route";
+import type { RouteSectionComponent } from "#/router/RouteSection";
 
 // // @DEBUG
-// import { debugRouteSectionProps } from "../debug";
-// const display = "<routes/users/Component>";
+// import { debugRouteSectionProps } from "#/router/debug";
+// const display = "<router/users/Component>";
 
 const SectionComponent: RouteSectionComponent = (props) => {
   // // @DEBUG

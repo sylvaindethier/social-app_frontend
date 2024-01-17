@@ -1,26 +1,23 @@
 import type { Component, ParentComponent } from "solid-js";
-
-// const paths = {
-//   Home: "/",
-//   Counter: "/counter",
-//   UseCounter: "/use-counter",
-// };
+import { A } from "@solidjs/router";
 
 const TopNav: Component = () => (
   <nav id="TopNav">
     <ul>
       <li>
-        <a href={"/"}>Go to Home path</a>
-      </li>
-      <li>{/* <a href={props.path_CreateUser}>Go to CreateUser path</a> */}</li>
-      <li>
-        <a href={"/counter"}>Go to Counter path</a>
+        <A href="/">Home</A>
       </li>
       <li>
-        <a href={"/use-counter"}>Go to UseCounter path</a>
+        <A href="/users/create">CreateUser</A>
       </li>
       <li>
-        <a href={"/no-exists"}>Go to NoExists path (should be CatchAll404)</a>
+        <A href="/counter">Counter</A>
+      </li>
+      <li>
+        <A href="/use-counter">UseCounter</A>
+      </li>
+      <li>
+        <A href="/no-exists">undefined path `404`</A>
       </li>
     </ul>
   </nav>

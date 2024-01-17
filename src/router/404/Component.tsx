@@ -1,6 +1,6 @@
-import type { RouteSectionComponent, RouteInfoComponent } from "../Route";
+import type { RouteSectionComponent, RouteSectionInfoComponent } from "#/router/RouteSection";
 
-const NotFound: RouteInfoComponent = (props) => (
+const NotFound: RouteSectionInfoComponent = (props) => (
   <div id="NotFound">
     <h3>Page non trouvée</h3>
     <div>
@@ -9,13 +9,13 @@ const NotFound: RouteInfoComponent = (props) => (
   </div>
 );
 
-// @DEBUG
-import { debugRouteSectionProps } from "../debug";
-const display = "<routes/404/Component>";
+// // @DEBUG
+// import { debugRouteSectionProps } from "#/router/debug";
+// const display = "<router/404/Component>";
 
 const SectionComponent: RouteSectionComponent = (props) => {
-  // @DEBUG
-  debugRouteSectionProps(display, props);
+  // // @DEBUG
+  // debugRouteSectionProps(display, props);
 
   return (
     <>

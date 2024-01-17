@@ -5,8 +5,8 @@ export type RouteSectionComponent<T = unknown> = Component<
   RouteSectionProps<T>
 >;
 
-export type RouteInfoProps<T = unknown> = Omit<
+export type RouteSectionInfoProps<T = unknown> = Omit<
   RouteSectionProps<T>,
   "children"
 >;
-export type RouteInfoComponent<T = unknown> = Component<RouteInfoProps<T>>;
+export type RouteSectionInfoComponent<T = unknown> = Component<RouteSectionInfoProps<T>>;

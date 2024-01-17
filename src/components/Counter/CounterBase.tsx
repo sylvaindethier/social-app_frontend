@@ -1,11 +1,10 @@
 import { createSignal } from "solid-js";
 import type { Component } from "solid-js";
-import solidLogo from "../../assets/solid.svg";
+import solidLogo from "#/assets/solid.svg";
 import viteLogo from "/vite.svg";
 import "./style.css";
 
 export const Counter: Component = () => {
-  // console.debug("Counter component");
   const [getCount, setCount] = createSignal(0);
 
   return (

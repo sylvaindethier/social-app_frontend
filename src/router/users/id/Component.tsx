@@ -1,8 +1,8 @@
-import type { RouteSectionComponent } from "../../Route";
+import type { RouteSectionComponent } from "#/router/RouteSection";
 
 // // @DEBUG
-// import { debugRouteSectionProps } from "../../debug";
-// const display = "<routes/users/id/Component>";
+// import { debugRouteSectionProps } from "#/router/debug";
+// const display = "<router/users/id/Component>";
 
 import { useParams } from "@solidjs/router";
 const SectionComponent: RouteSectionComponent = (props) => {
@@ -10,6 +10,7 @@ const SectionComponent: RouteSectionComponent = (props) => {
   // debugRouteSectionProps(display, props);
 
   // `params` is already in props
+  // maybe useParams() is needless
   const params = useParams();
   const id = params.id;
 

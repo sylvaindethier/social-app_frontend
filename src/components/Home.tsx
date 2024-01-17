@@ -2,12 +2,13 @@ import { A } from "@solidjs/router";
 import type { Component } from "solid-js";
 
 // // @DEBUG
-// import { debugProps } from "./debug";
+// import { debugProps } from "#components/debug";
+// const display = "<components/Home>";
+
 
 export const Home: Component = () => {
   // // @DEBUG
-  // const display = "<components/Home>";
-  // debugProps(display, props, { RenderEffect: true });
+  // debugProps(display, props);
 
   return (
     <div id="Home">

@@ -9,6 +9,10 @@
     "preview": "vite preview",
     "coverage:ts": "typescript-coverage-report"
   },
+  "imports": {
+    "#/*": "./src/*",
+    "#components/*": "./src/components/*"
+  },
   "dependencies": {
     "@solidjs/router": "^0.10.9",
     "solid-js": "^1.8.11"
