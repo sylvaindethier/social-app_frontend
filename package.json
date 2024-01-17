@@ -2,6 +2,7 @@
   "name": "social-app_frontend",
   "private": true,
   "version": "0.0.0",
+  "description": "Social App frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
