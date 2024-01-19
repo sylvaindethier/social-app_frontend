@@ -20,7 +20,7 @@
     "paths": {
       // "@/*": ["./src/*"],
       "#/*": ["./src/*"],
-      "#components/*": ["./src/components/*"]
+      // "#components/*": ["./src/components/*"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
     "resolvePackageJsonImports": true /* Use the package.json 'imports' field when resolving imports. */,
 
