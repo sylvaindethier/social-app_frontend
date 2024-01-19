@@ -1,5 +1,4 @@
 import { createEffect, createRenderEffect } from "solid-js";
-// import type { RouteSectionProps } from "@solidjs/router";
 
 export function debugProps<P = {}>(
   display: `<${string}>`,

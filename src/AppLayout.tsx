@@ -1,20 +1,27 @@
 import type { Component, ParentComponent } from "solid-js";
 import { A } from "@solidjs/router";
 
+import { path as pathIndex } from "#/router/index/definition";
+/** Counter */
+import { path as pathCounterDefault } from "#/domains/Counter/routes/default/definition";
+import { path as pathCounterIndex } from "#/domains/Counter/routes/index/definition";
+import { path as pathCounterUseContext } from "#/domains/Counter/routes/use-context/definition";
+/** User */
+
 const TopNav: Component = () => (
   <nav id="TopNav">
     <ul>
       <li>
-        <A href="/">Home</A>
+        <A href={pathIndex}>Home</A>
       </li>
       <li>
-        <A href="/counter-default">CounterDefault</A>
+        <A href={pathCounterDefault}>CounterDefault</A>
       </li>
       <li>
-        <A href="/counter">Counter</A>
+        <A href={pathCounterIndex}>CounterIndex</A>
       </li>
       <li>
-        <A href="/use-counter">UseCounter</A>
+        <A href={pathCounterUseContext}>CounterUseContext</A>
       </li>
       <li>
         <A href="/users/create">CreateUser</A>
