@@ -1,6 +1,6 @@
 import type { RouteDefinition } from "@solidjs/router";
 
-const path = "*404";
+export const path = "*404";
 
 // import component from "./Component";
 import { lazy } from "solid-js";

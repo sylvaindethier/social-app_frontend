@@ -9,13 +9,13 @@ const NotFound: RouteSectionInfoComponent = (props) => (
   </div>
 );
 
-// // @DEBUG
-// import { debugRouteSectionProps } from "#/router/debug";
-// const display = "<router/404/Component>";
+// @DEBUG
+import { debugRouteSectionProps } from "#/debug/debugRouteSectionProps";
+const display = "<router/404/Component>";
 
 const SectionComponent: RouteSectionComponent = (props) => {
-  // // @DEBUG
-  // debugRouteSectionProps(display, props);
+  // @DEBUG
+  debugRouteSectionProps(display, props);
 
   return (
     <>

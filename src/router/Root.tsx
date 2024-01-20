@@ -4,8 +4,8 @@ import { AppProvider } from "#/AppProvider";
 import { AppLayout } from "#/AppLayout";
 
 // @DEBUG
-import { debugRouteSectionProps } from "#/router/debug";
-const display = "<router.Component>";
+import { debugRouteSectionProps } from "#/debug/debugRouteSectionProps";
+const display = "<router/Root>";
 
 const SectionComponent: RouteSectionComponent = (props) => {
   // @DEBUG

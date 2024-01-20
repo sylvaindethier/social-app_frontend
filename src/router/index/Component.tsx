@@ -1,10 +1,9 @@
 import type { RouteSectionComponent } from "#/router/RouteSection";
+import { Home } from "./Home";
 
 // // @DEBUG
-// import { debugRouteSectionProps } from "#/router/debug";
+// import { debugRouteSectionProps } from "#/debug/debugRouteSectionProps";
 // const display = "<router/index/Component>";
-
-import { Home } from "#components/Home";
 
 const SectionComponent: RouteSectionComponent = (props) => {
   // // @DEBUG

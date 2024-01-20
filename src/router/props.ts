@@ -9,12 +9,12 @@ import route404 from "#/router/404/definition";
 import routeIndex from "#/router/index/definition";
 
 // *** Counter *** //
-import routeCounterDefault from "#/router/counter-default/definition";
-import routeCounter from "#/router/counter/definition";
-import routeUseCounter from "#/router/use-counter/definition";
+import routeCounterIndex from "#/domains/Counter/routes/index/definition";
+import routeCounterDefault from "#/domains/Counter/routes/default/definition";
+import routeCounterUseContext from "#/domains/Counter/routes/use-context/definition";
 
 // *** Users *** //
-import routeUsers from "#/router/users/definition";
+import routeUsers from "#/domains/User/routes/definition";
 
 // *** routes *** //
 const children: RouteDefinition[] = [
@@ -25,9 +25,9 @@ const children: RouteDefinition[] = [
   routeIndex,
 
   // Counter
+  routeCounterIndex,
   routeCounterDefault,
-  routeCounter,
-  routeUseCounter,
+  routeCounterUseContext,
 
   // /users
   routeUsers,
