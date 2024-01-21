@@ -1,6 +1,6 @@
 import type { RouteDefinition } from "@solidjs/router";
 
-export const path = "/counter/default";
+export const path = "/default";
 
 // import component from "./Component";
 import { lazy } from "solid-js";

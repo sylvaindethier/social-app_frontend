@@ -2,12 +2,12 @@ import type { Component } from "solid-js";
 import solidLogo from "#/assets/solid.svg";
 import viteLogo from "/vite.svg";
 import "./style.css";
-import type { Props } from "#/domains/Counter/types";
-import { createSignalCounter } from "#/domains/Counter/createSignalCounter";
+import type { Props } from "./types";
+import { createSignalCounter } from "./createSignalCounter";
 
 // @DEBUG
 import { debugProps } from "#/debug/debugProps";
-const display = "<domains/Counter/routes/default/CounterDefault>";
+const display = "<components/Counter/CounterDefault>";
 
 export const CounterDefault: Component<Props> = (props) => {
   // @DEBUG

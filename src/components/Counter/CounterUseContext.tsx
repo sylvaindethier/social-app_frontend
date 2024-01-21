@@ -1,9 +1,9 @@
 import type { Component } from "solid-js";
-import { useContextCounter } from "#/domains/Counter/ContextProviderCounter";
+import { useContextCounter } from "./ContextProviderCounter";
 
 // @DEBUG
 import { debugProps } from "#/debug/debugProps";
-const display = "<domains/Counter/routes/use-context/CounterUseContext>";
+const display = "<components/>Counter/CounterUseContext>";
 
 export const CounterUseContext: Component = (props) => {
   // @DEBUG

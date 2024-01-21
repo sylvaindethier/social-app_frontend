@@ -1,10 +1,10 @@
 import type { Component } from "solid-js";
-import type { Props } from "#/domains/Counter/types";
-import { createSignalCounter } from "#/domains/Counter/createSignalCounter";
+import type { Props } from "./types";
+import { createSignalCounter } from "./createSignalCounter";
 
 // @DEBUG
 import { debugProps } from "#/debug/debugProps";
-const display = "<domains/Counter/routes/index/Counter>";
+const display = "<components/Counter/Counter>";
 
 export const Counter: Component<Props> = (props) => {
   // @DEBUG
