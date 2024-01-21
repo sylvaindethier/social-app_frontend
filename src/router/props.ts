@@ -3,20 +3,18 @@ import type { RouterProps, RouteDefinition } from "@solidjs/router";
 import root from "./Root";
 
 // *** 404 NotFound *** //
-import route404 from "#/router/404/definition";
+import route404 from "./routes/404/definition";
 
 // *** index Home *** //
-import routeIndex from "#/router/index/definition";
+import routeIndex from "./routes/index/definition";
+
+// *** User *** //
+import routeUser from "./routes/user/definition";
 
 // *** Counter *** //
-import routeCounterIndex from "#/domains/Counter/routes/index/definition";
-import routeCounterDefault from "#/domains/Counter/routes/default/definition";
-import routeCounterUseContext from "#/domains/Counter/routes/use-context/definition";
+import routeCounter from "./routes/counter/definition";
 
-// *** Users *** //
-import routeUsers from "#/domains/User/routes/definition";
-
-// *** routes *** //
+// *** children routes *** //
 const children: RouteDefinition[] = [
   // 404 NotFound
   route404,
@@ -24,15 +22,12 @@ const children: RouteDefinition[] = [
   // index Home
   routeIndex,
 
+  // User
+  routeUser,
+
   // Counter
-  routeCounterIndex,
-  routeCounterDefault,
-  routeCounterUseContext,
-
-  // /users
-  routeUsers,
+  routeCounter,
 ];
-
 
 const props: RouterProps = { root, children };
 export default props;

@@ -1,20 +1,20 @@
 import type { RouteSectionComponent } from "#/router/RouteSection";
 
-import { AppProvider } from "#/AppProvider";
-import { AppLayout } from "#/AppLayout";
+import { Provider } from "./Provider";
+import { Layout } from "./Layout";
 
-// @DEBUG
-import { debugRouteSectionProps } from "#/debug/debugRouteSectionProps";
-const display = "<router/Root>";
+// // @DEBUG
+// import { debugRouteSectionProps } from "#/debug/debugRouteSectionProps";
+// const display = "<router/Root>";
 
-const SectionComponent: RouteSectionComponent = (props) => {
-  // @DEBUG
-  debugRouteSectionProps(display, props);
+const RouteComponent: RouteSectionComponent = (props) => {
+  // // @DEBUG
+  // debugRouteSectionProps(display, props);
 
   return (
-    <AppProvider>
-      <AppLayout>{props.children}</AppLayout>
-    </AppProvider>
+    <Provider>
+      <Layout>{props.children}</Layout>
+    </Provider>
   );
 };
-export default SectionComponent;
+export default RouteComponent;
