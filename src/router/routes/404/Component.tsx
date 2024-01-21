@@ -13,15 +13,15 @@ const NotFound: RouteSectionInfoComponent = (props) => (
 import { debugRouteSectionProps } from "#/debug/debugRouteSectionProps";
 const display = "<router/404/Component>";
 
-const SectionComponent: RouteSectionComponent = (props) => {
+const RouteComponent: RouteSectionComponent = (props) => {
   // @DEBUG
   debugRouteSectionProps(display, props);
 
   return (
     <>
       <NotFound {...props} />
-      {props.children}
+      {/* {props.children} */}
     </>
   );
 };
-export default SectionComponent;
+export default RouteComponent;
