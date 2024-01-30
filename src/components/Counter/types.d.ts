@@ -1,5 +1,5 @@
-export type Value = number;
+export type CounterValue = number;
 
-export type Props = {
-  initial?: Value;
+export type CounterProps = {
+  initial?: CounterValue;
 };

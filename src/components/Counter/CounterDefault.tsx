@@ -1,17 +1,17 @@
-import type { Component } from "solid-js";
+import { createSignalCounter } from "./createSignalCounter";
 import solidLogo from "#/assets/solid.svg";
 import viteLogo from "/vite.svg";
 import "./style.css";
-import type { Props } from "./types";
-import { createSignalCounter } from "./createSignalCounter";
+import type { Component } from "solid-js";
+import type { CounterProps } from "./types";
 
-// @DEBUG
-import { debugProps } from "#/debug/debugProps";
-const display = "<components/Counter/CounterDefault>";
+// // @DEBUG
+// import { debugProps } from "#/lib/debug/debugProps";
+// const display = "<components/Counter/CounterDefault>";
 
-export const CounterDefault: Component<Props> = (props) => {
-  // @DEBUG
-  debugProps(display, props);
+export const CounterDefault: Component<CounterProps> = (props) => {
+  // // @DEBUG
+  // debugProps(display, props);
 
   const [getCounter, setCounter] = createSignalCounter(props.initial);
 
@@ -28,7 +28,7 @@ export const CounterDefault: Component<Props> = (props) => {
       <h1>Vite + Solid</h1>
       <div class="card">
         <button onClick={() => setCounter((counter) => counter + 1)}>
-          count is {getCounter()}
+          counter is {getCounter()}
         </button>
       </div>
       <p class="read-the-docs">

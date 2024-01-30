@@ -1,4 +1,5 @@
 import { createSignal } from "solid-js";
-import type { Value } from "./types";
+import type { CounterValue } from "./types";
 
-export const createSignalCounter = (value: Value = 0) => createSignal<Value>(value);
+export const createSignalCounter = (value: CounterValue = 0) =>
+  createSignal<CounterValue>(value);

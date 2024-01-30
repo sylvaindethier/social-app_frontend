@@ -1,14 +1,14 @@
-import type { Component } from "solid-js";
-import type { Props } from "./types";
 import { createSignalCounter } from "./createSignalCounter";
+import type { Component } from "solid-js";
+import type { CounterProps } from "./types";
 
-// @DEBUG
-import { debugProps } from "#/debug/debugProps";
-const display = "<components/Counter/Counter>";
+// // @DEBUG
+// import { debugProps } from "#/lib/debug/debugProps";
+// const display = "<components/Counter/Counter>";
 
-export const Counter: Component<Props> = (props) => {
-  // @DEBUG
-  debugProps(display, props);
+export const Counter: Component<CounterProps> = (props) => {
+  // // @DEBUG
+  // debugProps(display, props);
 
   const [getCounter, setCounter] = createSignalCounter(props.initial);
 
@@ -21,7 +21,7 @@ export const Counter: Component<Props> = (props) => {
 
   return (
     <div id="Counter">
-      <h3>Counter : Component</h3>
+      <h3>Counter</h3>
       <div>getCounter(): {getCounter()}</div>
       <button onClick={increment}>+</button>
       <button onClick={decrement}>-</button>

@@ -1,13 +1,12 @@
 import type { Component } from "solid-js";
 
-// @DEBUG
-import { debugProps } from "#/debug/debugProps";
-const display = "<components/Home>";
+// // @DEBUG
+// import { debugProps } from "#/lib/debug/debugProps";
+// const display = "<components/Home>";
 
-
-export const Home: Component = (props) => {
-  // @DEBUG
-  debugProps(display, props);
+export const Home: Component = (/*props*/) => {
+  // // @DEBUG
+  // debugProps(display, props);
 
   return (
     <div id="Home">

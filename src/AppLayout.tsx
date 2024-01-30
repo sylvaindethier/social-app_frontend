@@ -1,5 +1,5 @@
-import type { Component, ParentComponent } from "solid-js";
 import { A } from "@solidjs/router";
+import type { Component, ParentComponent } from "solid-js";
 
 const TopNav: Component = () => (
   <nav id="TopNav">
@@ -13,13 +13,13 @@ const TopNav: Component = () => (
       </li>
 
       <li>
-        <A href="/users">Users</A>
+        <A href="/user">Users</A>
       </li>
       <li>
-        <A href="/users/3">User with id 3</A>
+        <A href="/user/3">User with id 3</A>
       </li>
       <li>
-        <A href="/users/999">User with id 999</A>
+        <A href="/user/999">User with id 999</A>
       </li>
 
       <li>
@@ -39,7 +39,7 @@ const TopNav: Component = () => (
   </nav>
 );
 
-export const Layout: ParentComponent = (props) => (
+export const AppLayout: ParentComponent = (props) => (
   <>
     <TopNav />
     {props.children}
